@@ -1,8 +1,7 @@
-import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import "./EmojiResultRow.css";
 
-const EmojiResultRow = ({ title, symbol, key }) => {
+const EmojiResultRow = ({ title, symbol }) => {
     const codePointHex =symbol.codePointAt(0).toString(16);
     const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
   return (

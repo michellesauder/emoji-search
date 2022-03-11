@@ -1,5 +1,6 @@
 
-const emojiReducer = (state, { type, payload }) => {
+
+const emojiReducer = (state = [], { type, payload }) => {
     console.log(payload, '')
     switch (type){
         case 'HYDRATE_EMOJI_LIST':
